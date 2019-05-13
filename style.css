@@ -6,6 +6,10 @@ a {
 	color: #542b00;
 }
 
+img {
+	max-width: 100%;
+}
+
 .margin {
 	float: left;
 	height: 100%;
