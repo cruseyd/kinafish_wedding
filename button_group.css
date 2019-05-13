@@ -1,0 +1,27 @@
+.button_group_vert {
+    width: 300px;
+    position: absolute;
+    right: 0px;
+    background-color: blue;
+}
+
+.button_group button {
+    font-family: sans-serif;
+    font-size: 20px;
+  	background-color: BlanchedAlmond;
+  	border: 1px solid #330a00;
+  	color: #330a00; 
+  	padding: 10px 24px; /* Some padding */
+  	cursor: pointer; /* Pointer/hand icon */
+  	width: 200px; /* Set a width if needed */
+  	display: block; /* Make the buttons appear below each other */
+}
+
+.button_group button:not(:last-child) {
+  	border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.button_group button:hover {
+  	background-color: BurlyWood;
+}

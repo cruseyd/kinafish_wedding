@@ -1,0 +1,28 @@
+.button_group_horz {
+    width: 95%;
+    height: 80px;
+    position: absolute;
+    left: 2.5%;
+
+}
+
+.button_group_horz button {
+    font-family: 'Merienda';
+    font-size: 14px;
+  	background-color: BlanchedAlmond;
+  	border: 1px solid #330a00;
+  	color: #330a00; 
+  	padding: 5px 12px; /* Some padding */
+  	cursor: pointer; /* Pointer/hand icon */
+    float: left;
+    width: 14%;
+}
+
+.button_group_horz button:not(:last-child) {
+  	border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.button_group_horz button:hover {
+  	background-color: BurlyWood;
+}

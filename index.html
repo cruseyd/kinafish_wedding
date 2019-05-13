@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="button_group_horz.css" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+	<title>Kinafish Wedding</title>
+	</head>
+<body style="background-color: rgb(256,256,200); color: #542b00;">
+	<div id="header">
+		<img class="corner_img" style="left: 8px;" src="img/corner_top_left.png">
+		<img class="corner_img" style="right: 8px;" src="img/corner_top_right.png">
+	</div>
+	<div id="main" style="height: 1300px">
+		<div id="center">
+		
+			<h1> Home </h1>
+			
+			<p>Welcome to our wedding website, we can’t wait to celebrate with you.</p>
+
+			<p>We’ve created this website as a convenient and interactive way to share all of the important details with you in the lead up to our wedding. We wanted to share the preliminary details with everyone as soon as possible, but given that our wedding isn't for a little while, this website is still a work in progress. Check back often for updates!</p>
+
+			<p>This website will be filled to the brim with useful info: you can find <a href="activities.html">great things to do </a> around our venue, a list of <a href="accomodations.html">local accomodations</a>, as well as our <a href="registry.html">registry </a> information. After the wedding, we will also provide information for obtaining <a href="gallery.html"> photos from the event </a></p>
+
+			<p>So have fun, take a look around and keep an eye on your mailbox: official invites will be sent about 6 – 8 months before the event</p>
+
+			<p>Finally – thank you for your ongoing love and support. We are so excited to share this day with you and look forward to dancing the night away with all of our favorite people!</p>
+
+			<img src="img/portrait_wide.png">
+
+			<h1> Til Death Do Us Part-y! </h1>
+
+		</div>
+		<div class="button_group_horz">
+			<a href="index.html"><button > Home </button></a>
+			<a href="basics.html"><button > Basics </button></a>
+			<a href="accomodations.html"><button > Accomodations </button></a>
+			<a href="activities.html"><button > Activities </button></a>
+			<a href="contact.html"><button > Contact </button></a>
+			<a href="registry.html"><button > Registry </button></a>
+			<a href="gallery.html"><button > Gallery </button></a>
+		</div>
+	</div>
+	<div id="footer">
+		<img class="corner_img" style="left: 8px;" src="img/corner_bot_left.png">
+		<img class="corner_img" style="right: 8px;" src="img/corner_bot_right.png">
+		<div id="countdown">
+			<div id="footer_text"> Countdown to 10 - 30 - 2020</div>
+			<div id="timer"></div>
+			<script>
+				// Set the date we're counting down to
+				var countDownDate = new Date("Oct 30, 2020 00:00:00").getTime();
+
+				// Update the count down every 1 second
+				var x = setInterval(function() {
+
+				  	// Get todays date and time
+				  	var now = new Date().getTime();
+
+				  	// Find the distance between now and the count down date
+				  	var distance = countDownDate - now;
+
+				  	// Time calculations for days, hours, minutes and seconds
+				  	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				  	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+					// Display the result in the element with id="demo"
+					document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+						+ minutes + "m " + seconds + "s ";
+
+					// If the count down is finished, write some text 
+					if (distance < 0) {
+						clearInterval(x);
+					    document.getElementById("timer").innerHTML = "EXPIRED";
+					}
+				}, 1000);
+			</script>
+
+		</div>
+		
+	</div>
+	
+</body>
