@@ -44,8 +44,8 @@ img {
 #main h2 {
 	font-size: 32px;
 	display: inline;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 10%;
+	padding-right: 10%;
 	vertical-align: middle;
 }
 
