@@ -12,7 +12,7 @@
   	padding: 5px 12px; /* Some padding */
   	cursor: pointer; /* Pointer/hand icon */
     float: left;
-    width: 14%;
+    width: 12.5%;
 }
 
 .button_group_horz button:not(:last-child) {
